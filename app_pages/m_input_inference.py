@@ -20,7 +20,7 @@ def main():
 
         # 1 Positive, 0 Negative
 
-        pred = 'Positive' if prediction == 1 else 'Negative'
+        pred = 'Disaster' if prediction == 1 else 'Non-disaster'
         st.write("Prediction: ", f'<span>{pred}</span>', unsafe_allow_html=True)
 
 
