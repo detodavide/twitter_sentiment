@@ -10,12 +10,12 @@ def clean_text(text, patterns):
 def preprocess(input):
 
     patterns = {
-            r"UTC]": '',
-            r"b'": '',
-            r'\d+': '',      # rimuove digits (numeri)
-            r'[^\w\s]': '',  # Remove punteggiatura e simboli ...,'@!£$%
-            r'\b\w{1,2}\b':'',#remove all token less than2 characters
-            r'(http|www)[^\s]+':'', # remove website
+            r"UTC]": ' ',
+            r"b'": ' ',
+            r'\d+': ' ',      # rimuove digits (numeri)
+            r'[^\w\s]': ' ',  # Remove punteggiatura e simboli ...,'@!£$%
+            r'\b\w{1,2}\b':' ',#remove all token less than2 characters
+            r'(http|www)[^\s]+':' ', # remove website
             r' one ': ' ',
             r' will ': ' ',
             r' new ': ' ',
